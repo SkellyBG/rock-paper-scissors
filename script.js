@@ -37,6 +37,8 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     for (let i = 0; i < 5; i++) {
         let input = prompt("Enter your choice: ");
-        console.log(playRound(input, getComputerChoice()));
+        console.log("Round " + (i + 1) + ": " + playRound(input, getComputerChoice()));
     }
 }
+
+game();
