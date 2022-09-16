@@ -35,10 +35,11 @@ function playRound(playerSelection, computerSelection) {
 // console.log(playRound(playerSelection, computerSelection));
 
 function game() {
-    for (let i = 0; i < 5; i++) {
-        let input = prompt("Enter your choice: ");
-        console.log("Round " + (i + 1) + ": " + playRound(input, getComputerChoice()));
-    }
+  let input = prompt("Enter your choice: ");
+  console.log("Round " + (i + 1) + ": " + playRound(input, getComputerChoice()));
 }
 
+const rockBtn = document.querySelector("#rock");
+const paperBtn = document.querySelector("#paper");
+const scissorBtn = document.querySelector("#scissor");
 game();
